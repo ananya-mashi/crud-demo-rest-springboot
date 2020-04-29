@@ -15,7 +15,7 @@ public class CustomerServiceImpl implements CustomerService {
 	private CustomerDAO Customerdao;
 	
 	@Autowired
-	public CustomerServiceImpl(CustomerDAO theCustomerdao){
+	public CustomerServiceImpl(CustomerDAO theCustomerdao){ //@Qualifier annotation for new jpa implementation (--this is not jpa repository
 		Customerdao=theCustomerdao;
 	}
 	@Override
